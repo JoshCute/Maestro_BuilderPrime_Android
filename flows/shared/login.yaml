@@ -1,0 +1,14 @@
+appId: ${APP_ID}
+
+---
+- launchApp
+- tapOn:
+    id: "com.yourapp:id/username"
+- inputText: "testuser"
+
+- tapOn:
+    id: "com.yourapp:id/password"
+- inputText: "password123"
+
+- tapOn:
+    id: "com.yourapp:id/login_button"

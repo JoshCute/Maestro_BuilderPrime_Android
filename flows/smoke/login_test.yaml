@@ -1,0 +1,54 @@
+appId: ${APP_ID}
+name: "Smoke Test - Successful Login"
+
+---
+# 0. Ensure clean state (defensive even if script clears it)
+- clearState
+
+# 1. Launch app
+- launchApp:
+    appId: ${APP_ID}
+
+# 2. Wait for login screen (more robust than single assert)
+- extendedWaitUntil:
+    visible: "Get started"
+    timeout: 20000
+
+# 3. Workspace input (avoid relying purely on placeholder)
+- tapOn: "Workspace name"
+- eraseText
+- inputText: ${WORKSPACE}
+
+# Optional: hide keyboard if it overlaps button
+- hideKeyboard
+
+# 4. Continue
+- tapOn: "CONTINUE"
+
+# 5. Wait for next screen (don’t assume instant transition)
+- extendedWaitUntil:
+    visible: "Welcome"
+    timeout: 20000
+
+# 6. Email field (ID is good → keep it)
+- tapOn: "Email address "
+- eraseText
+- inputText: ${USERNAME}
+
+# 7. Password field
+- tapOn: "Password "
+- eraseText
+- inputText: ${PASSWORD}
+
+- hideKeyboard
+
+# 8. Login action
+- tapOn: "Continue"
+
+# 9. Post-login validation (use wait instead of immediate assert)
+- extendedWaitUntil:
+    visible: "Home"
+    timeout: 15000
+
+# 10. Secondary assertion (ensures correct screen, not partial load)
+- assertVisible: "SCHEDULE"

@@ -1,0 +1,21 @@
+# Node
+node_modules/
+
+# Env files (sensitive)
+env/*.yaml
+
+# Test data (if contains credentials)
+test-data/*.json
+
+# Build artifacts
+apps/*.apk
+
+# Reports
+reports/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Android
+*.avd/

@@ -1,0 +1,6 @@
+# Global Maestro configuration
+executionOrder:
+  continueOnFailure: false
+
+flows:
+  - flows

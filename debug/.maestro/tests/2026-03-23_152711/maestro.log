@@ -1,0 +1,89 @@
+15:27:11.457 [ INFO] maestro.cli.report.TestDebugReporter.logSystemInfo: Debug output path: C:\Users\Full Scale\OneDrive\Documents\maestro-automation\debug\.maestro\tests\2026-03-23_152711
+15:27:11.461 [ INFO] MAESTRO.logSystemInfo: ---- System Info ----
+15:27:11.462 [ INFO] MAESTRO.logSystemInfo: Maestro Version: 2.3.0
+15:27:11.463 [ INFO] MAESTRO.logSystemInfo: CI: Undefined
+15:27:11.464 [ INFO] MAESTRO.logSystemInfo: OS Name: Windows 11
+15:27:11.464 [ INFO] MAESTRO.logSystemInfo: OS Version: 10.0
+15:27:11.464 [ INFO] MAESTRO.logSystemInfo: Architecture: amd64
+15:27:11.466 [ INFO] MAESTRO.logSystemInfo: Java Version: 17
+15:27:11.468 [ INFO] MAESTRO.logSystemInfo: Xcode Version: null
+15:27:11.472 [ INFO] MAESTRO.logSystemInfo: Flutter Version: Undefined
+15:27:11.477 [ INFO] MAESTRO.logSystemInfo: Flutter Channel: Undefined
+15:27:11.479 [ INFO] MAESTRO.logSystemInfo: ---------------------
+15:27:12.082 [ INFO] maestro.cli.command.TestCommand.runShardSuite: [shard 1] Selected device R5CY31L38FL using port 7001 with execution plan ExecutionPlan(flowsToRun=[C:\Users\Full Scale\OneDrive\Documents\maestro-automation\flows\smoke\login_test.yaml], sequence=FlowSequence(flows=[], continueOnFailure=true), workspaceConfig=WorkspaceConfig(flows=null, includeTags=null, excludeTags=null, executionOrder=null, baselineBranch=null, notifications=null, disableRetries=false, platform=PlatformConfiguration(android=AndroidConfiguration(disableAnimations=false), ios=IOSConfiguration(disableAnimations=false, snapshotKeyHonorModalViews=null)), testOutputDir=null))
+15:27:12.290 [DEBUG] io.micrometer.common.util.internal.logging.InternalLoggerFactory.newDefaultFactory: Using SLF4J as the default logging framework
+15:27:18.521 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow:  Running flow Smoke Test - Successful Login
+15:27:18.531 [ INFO] maestro.Maestro.cachedDeviceInfo_delegate$lambda$0: Getting device info
+15:27:18.840 [ INFO] maestro.Maestro.cachedDeviceInfo_delegate$lambda$0: Got device info: DeviceInfo(platform=ANDROID, widthPixels=1080, heightPixels=2340, widthGrid=1080, heightGrid=2340)
+15:27:18.932 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Define variables RUNNING
+15:27:18.936 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Define variables COMPLETED
+15:27:18.937 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+15:27:19.826 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+15:27:19.826 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Clear state of ${APP_ID} RUNNING
+15:27:19.841 [ INFO] maestro.Maestro.clearAppState: Clearing app state com.builderprime.android
+15:27:20.736 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Clear state of ${APP_ID} COMPLETED
+15:27:20.736 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Launch app "com.builderprime.android" RUNNING
+15:27:21.596 [ INFO] maestro.Maestro.launchApp: Launching app com.builderprime.android
+15:27:21.596 [ INFO] maestro.Maestro.launchApp: Stopping com.builderprime.android app during launch
+15:27:21.708 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Launch app "com.builderprime.android" COMPLETED
+15:27:21.709 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that "Get started" is visible RUNNING
+15:27:21.941 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that "Get started" is visible COMPLETED
+15:27:21.942 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "Workspace name" RUNNING
+15:27:24.214 [ INFO] maestro.Maestro.tap-BUbHBYE: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Workspace name, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[121,1099][375,1138], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=121, y=1099, width=254, height=39))
+15:27:25.402 [ INFO] maestro.Maestro.tap-BUbHBYE: Refreshed element
+15:27:25.406 [ INFO] maestro.Maestro.hierarchyBasedTap-hbl3e4M: Tapping at (248, 1115) using hierarchy based logic for wait
+15:27:26.710 [ INFO] maestro.Maestro.hierarchyBasedTap-hbl3e4M: Something has changed in the UI judging by view hierarchy. Proceed.
+15:27:26.711 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "Workspace name" COMPLETED
+15:27:26.711 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Input text ${WORKSPACE} RUNNING
+15:27:26.727 [ INFO] maestro.Maestro.inputText: Inputting text: stage
+15:27:27.662 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Input text ${WORKSPACE} COMPLETED
+15:27:27.662 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "CONTINUE" RUNNING
+15:27:27.803 [ INFO] maestro.Maestro.tap-BUbHBYE: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=CONTINUE, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=false, bounds=[79,738][1001,771], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=79, y=738, width=922, height=33))
+15:27:28.630 [ INFO] maestro.Maestro.tap-BUbHBYE: Refreshed element
+15:27:28.631 [ INFO] maestro.Maestro.hierarchyBasedTap-hbl3e4M: Tapping at (540, 754) using hierarchy based logic for wait
+15:27:29.477 [ INFO] maestro.Maestro.hierarchyBasedTap-hbl3e4M: Something has changed in the UI judging by view hierarchy. Proceed.
+15:27:29.479 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "CONTINUE" COMPLETED
+15:27:29.479 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that "Welcome" is visible RUNNING
+15:27:33.566 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that "Welcome" is visible COMPLETED
+15:27:33.567 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on id: username RUNNING
+15:27:33.655 [ INFO] maestro.Maestro.tap-BUbHBYE: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=, accessibilityText=, hintText=Email address , ignoreBoundsFiltering=false, resource-id=username, clickable=true, bounds=[105,842][976,984], enabled=true, focused=true, checked=false, scrollable=false, selected=false, class=android.widget.EditText, important-for-accessibility=false, error=}, children=[], clickable=true, enabled=true, focused=true, checked=false, selected=false), bounds=Bounds(x=105, y=842, width=871, height=142))
+15:27:34.497 [ INFO] maestro.Maestro.tap-BUbHBYE: Refreshed element
+15:27:34.498 [ INFO] maestro.Maestro.hierarchyBasedTap-hbl3e4M: Tapping at (540, 913) using hierarchy based logic for wait
+15:27:35.974 [ INFO] maestro.Maestro.hierarchyBasedTap-hbl3e4M: Something has changed in the UI judging by view hierarchy. Proceed.
+15:27:35.974 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on id: username COMPLETED
+15:27:35.974 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Input text ${EMAIL} RUNNING
+15:27:35.994 [ INFO] maestro.Maestro.inputText: Inputting text: joshua.sacramento@builderprime.com
+15:27:39.881 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Input text ${EMAIL} COMPLETED
+15:27:39.881 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on id: password RUNNING
+15:27:40.053 [ INFO] maestro.Maestro.tap-BUbHBYE: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=, accessibilityText=, hintText=Password , ignoreBoundsFiltering=false, resource-id=password, clickable=true, bounds=[105,1013][858,1152], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.EditText, important-for-accessibility=false, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=105, y=1013, width=753, height=139))
+15:27:40.929 [ INFO] maestro.Maestro.tap-BUbHBYE: Refreshed element
+15:27:40.929 [ INFO] maestro.Maestro.hierarchyBasedTap-hbl3e4M: Tapping at (481, 1082) using hierarchy based logic for wait
+15:27:41.888 [ INFO] maestro.Maestro.hierarchyBasedTap-hbl3e4M: Something has changed in the UI judging by view hierarchy. Proceed.
+15:27:41.888 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on id: password COMPLETED
+15:27:41.888 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Input text ${PASSWORD} RUNNING
+15:27:41.924 [ INFO] maestro.Maestro.inputText: Inputting text: Password123#
+15:27:43.571 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Input text ${PASSWORD} COMPLETED
+15:27:43.571 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Hide Keyboard RUNNING
+15:27:43.572 [ INFO] maestro.Maestro.hideKeyboard: Hiding Keyboard
+15:27:44.969 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Hide Keyboard COMPLETED
+15:27:44.970 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "Continue" RUNNING
+15:27:45.066 [ INFO] maestro.Maestro.tap-BUbHBYE: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Continue, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=, clickable=true, bounds=[105,1312][976,1451], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.Button, important-for-accessibility=false, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=105, y=1312, width=871, height=139))
+15:27:46.577 [ INFO] maestro.Maestro.tap-BUbHBYE: Refreshed element
+15:27:46.577 [ INFO] maestro.Maestro.hierarchyBasedTap-hbl3e4M: Tapping at (540, 1381) using hierarchy based logic for wait
+15:27:47.544 [ INFO] maestro.Maestro.hierarchyBasedTap-hbl3e4M: Something has changed in the UI judging by view hierarchy. Proceed.
+15:27:47.544 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "Continue" COMPLETED
+15:27:47.545 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that "Home", Index: 0 is visible RUNNING
+15:27:47.656 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that "Home", Index: 0 is visible COMPLETED
+15:27:47.656 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that "SCHEDULE" is visible RUNNING
+15:27:52.277 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that "SCHEDULE" is visible COMPLETED
+15:27:52.684 [ INFO] maestro.cli.report.TestDebugReporter.deleteOldFiles: Performing purge of logs older than 14 days from C:\Users\Full Scale\OneDrive\Documents\maestro-automation\debug\.maestro\tests
+15:27:53.001 [ERROR] maestro.cli.session.MaestroSessionManager.newSession$lambda$0: Failed to record heartbeat
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at maestro.cli.session.MaestroSessionManager.newSession$lambda$0(MaestroSessionManager.kt:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
