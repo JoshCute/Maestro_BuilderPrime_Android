@@ -1,0 +1,33 @@
+appId: ${APP_ID}
+name: "Negative - Invalid Email Format"
+
+---
+- clearState
+- launchApp:
+    appId: ${APP_ID}
+
+# Workspace step
+- extendedWaitUntil:
+    visible: "Get started"
+    timeout: 20000
+
+- tapOn: "Workspace name"
+- inputText: ${WORKSPACE}
+- tapOn: "CONTINUE"
+
+# Email step
+- extendedWaitUntil:
+    visible: "Welcome"
+    timeout: 20000
+
+- tapOn: "Email address "
+- inputText: "invalid-email"
+
+- tapOn: "Password "
+- inputText: ${PASSWORD}
+
+- hideKeyboard
+- tapOn: "Continue"
+
+# Validate error
+- assertVisible: "Enter a valid email"

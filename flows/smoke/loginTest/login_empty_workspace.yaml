@@ -1,0 +1,25 @@
+appId: ${APP_ID}
+name: "Negative - Empty Workspace"
+
+---
+- clearState
+- launchApp:
+    appId: ${APP_ID}
+
+- extendedWaitUntil:
+    visible: "Get started"
+    timeout: 20000
+
+# Do not input anything
+- tapOn: "CONTINUE"
+
+# Validate validation message
+- assertVisible:
+    id: "android:id/alertTitle"
+- assertVisible:
+    id: "android:id/message"
+- assertVisible: "Failed to get company information. Please try again."
+
+# Tap Button OK
+- tapOn:
+    id: "android:id/button1"
